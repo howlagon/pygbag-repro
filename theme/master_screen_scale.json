@@ -1,0 +1,30 @@
+{
+    "defaults": {
+        "font": {"name": "notosans", "size": "14"},
+        "colours": {
+            "normal_bg": "#655934",
+            "hovered_bg": "#1E1809",
+            "disabled_bg": "#5C5850",
+            "selected_bg": "#655934",
+            "active_bg": "#655934",
+            "dark_bg": "#B19D74",
+            "normal_text": "#000000",
+            "active_text": "#000000",
+            "hovered_text": "#000000",
+            "selected_text": "#000000",
+            "disabled_text": "#000000",
+            "link_text": "#B68727",
+            "link_hover": "#EFE5CE",
+            "link_selected": "#3A91A6",
+            "text_shadow": "#777777",
+            "normal_border": "#776045",
+            "hovered_border": "#291B0F",
+            "disabled_border": "#706B64",
+            "selected_border": "#776045",
+            "active_border": "#776045"
+        },
+        "misc": {"border_width": "12", "shadow_width": "0"}
+    },
+    "#text_box_22": {"prototype": "text_box", "font": {"size": "11", "name": "notosans"}},
+    "label": {"prototype": "#text_box_22"}
+}
