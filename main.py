@@ -27,12 +27,6 @@ coords_display = pygame_gui.elements.UILabel(
     object_id=None,
 )
 
-print(f"{MANAGER=}\n" + f"{get_default_manager()=}\n" + f"{get_default_manager().ui_theme.font_dict.get_default_font()=}")
-print(f"{get_default_manager().ui_theme._locale=}")
-dmg = get_default_manager()
-font = get_default_manager().ui_theme.ele_font_res['label'][get_default_manager().ui_theme._locale]
-print(f"\n{font.font_id=}\n" + f"{font.location=}\n" + f"{font.loaded_font=}\n")
-
 async def main():
     while True:
         window.fill((255, 255, 255))
