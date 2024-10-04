@@ -8,24 +8,21 @@
 # ///
 
 import pygame
-import pygame_gui
 import asyncio
 from pygame_gui.core.utility import get_default_manager
 
+from debug_menu import debugConsole
 from screen import load_manager
 from manager import MANAGER
 
 pygame.init()
 
-MANAGER = load_manager((800, 700), (0, 0), 1)
 window = pygame.display.set_mode((800, 700))
 clock = pygame.time.Clock()
+if MANAGER is None:
+    MANAGER = load_manager(res=(800, 700), screen_offset=(0, 0), scale=1)
 
-coords_display = pygame_gui.elements.UILabel(
-    pygame.Rect((0, 0), (-1, -1)),
-    "(0, 0)",
-    object_id=None,
-)
+debug_console = debugConsole(pygame.rect.Rect(0, 0, 800, 700), MANAGER)
 
 async def main():
     while True:

@@ -25,6 +25,17 @@
         },
         "misc": {"border_width": "12", "shadow_width": "0"}
     },
+    "#window_base_theme": {
+        "misc": {
+            "shape": "rounded_rectangle",
+            "shape_corner_radius": "8",
+            "border_width": "3",
+            "shadow_width": "0",
+            "enable_title_bar": "0"
+        },
+        "colours": {"normal_border": "#2F2918", "dark_bg": "#AC9D72"}
+    },
     "#text_box_22": {"prototype": "text_box", "font": {"size": "11", "name": "notosans"}},
-    "label": {"prototype": "#text_box_22"}
+    "label": {"prototype": "#text_box_22"},
+    "#debug_console": {"prototype": "#window_base_theme"}
 }
